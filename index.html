@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concord</title>
+    <link href="./bootstrap.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ECE1C8;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='201'%3E%3Cline x1='0' y1='80.5' x2='16' y2='80.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='89.5' x2='16' y2='89.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='98.5' x2='16' y2='98.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='107.5' x2='16' y2='107.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='116.5' x2='16' y2='116.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='164.5' x2='16' y2='164.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='173.5' x2='16' y2='173.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='182.5' x2='16' y2='182.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='191.5' x2='16' y2='191.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3Cline x1='0' y1='200.5' x2='16' y2='200.5' stroke='rgba(0,0,0,0.08)' stroke-width='0.5'/%3E%3C/svg%3E");
+            color: #3b2f1e;
+        }
+
+        a {
+            color: #7a4a1f;
+        }
+
+        a:hover {
+            color: #a5652a;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 820px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* height: 90px; */
+            margin-bottom: -25px;
+        }
+
+        .brand {
+            font-family: 'Sacramento', 'Brush Script MT', cursive;
+            font-style: italic;
+            font-size: 7rem;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        pre.citation {
+            overflow-x: scroll;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 12px;
+            margin-top: 12px;
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        pre.citation::-webkit-scrollbar {
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            display: none;
+        }
+
+        .citation-container {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        code.language-latex {
+            color: #4a3a20;
+        }
+
+        .bibtex-tag {
+            color: rgb(150, 60, 40);
+        }
+
+        .bibtex-name {
+            color: rgb(110, 70, 140);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            pre code {
+                font-size: 12px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            p.footnote {
+                font-size: 11px;
+            }
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .authors {
+            margin-top: 0;
+        }
+
+        .footnote {
+            width: 100%;
+            color: #6b5b3f;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        a.link {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <h1 class="brand">Concord</h1>
+        </div>
+        <h2 class="title">A Video Relational Algebra for Cross-Modal Query Optimization</h2>
+        <h6 class="authors" style="text-align: center;">
+            <a href="#">Sultan Muratbek</a><sup>*</sup>,
+            <a href="#">Charisse Ivana Yeung</a><sup>*</sup>,
+            <a href="https://chanwutk.github.io">Chanwut (Mick) Kittivorawong</a>,
+            <a href="https://people.eecs.berkeley.edu/~akcheung">Alvin Cheung</a>
+        </h6>
+        <p class="footnote" style="text-align: center; margin-top: -5px;">*Equal contribution &middot; UC Berkeley</p>
+        <div class="links">
+            [<a class="link" href="#" target="_blank">arXiv</a>]
+            &nbsp;&nbsp;
+            [<a class="link" href="#" target="_blank">Paper</a>]
+            &nbsp;&nbsp;
+            [<a class="link" href="#" target="_blank">GitHub</a>]
+        </div>
+        <p align="justify">
+            Semantic video queries let users analyze video content by issuing natural-language prompts to a
+            multimodal large language model (MLLM). Such queries are increasingly popular, but their
+            expressiveness comes at a steep cost. An MLLM may process hours of media to return only seconds of
+            relevant output, making naive execution slow, expensive, and inaccurate.
+        </p>
+        <p align="justify">
+            We propose Concord, a system for expressing and optimizing semantic video queries. Concord makes
+            three contributions. First, we introduce <em>Video Relational Algebra</em> (VRA), a nested algebra
+            over videos, transcripts, frames, and object tracks that captures common semantic video operations.
+            Second, we derive approximate VRA rewrites that can reduce MLLM usage and improve result quality.
+            For narrated video, Concord either processes transcripts instead of video or uses them to identify
+            video clips for MLLM processing. For cross-camera queries without narration, detection and tracking
+            replace whole-video semantic association performed by an MLLM with a track-level relational join.
+        </p>
+        <p align="justify">
+            Third, we evaluate Concord on real-world videos. Across 4.59 hours of soccer broadcasts and 3.92
+            hours of lectures, transcript-to-video queries send only 5.32% and 2.47% of source-video duration to
+            the MLLM and reduce MLLM cost by 85.0% and 87.2%, respectively. On two five-second highway clips
+            containing 18 manually adjudicated cross-camera vehicles, a Detect&ndash;Track&ndash;Join query
+            improves F1 from .364 to .813 while making no MLLM calls.
+        </p>
+
+        <div class="citation-container">
+            <pre class="citation"><code class="language-latex"><span class="bibtex-tag">@misc</span>{<span class="bibtex-name">muratbek2026concord</span>,
+      title         = {Concord: A Video Relational Algebra for
+                               Cross-Modal Query Optimization},
+      author        = {Sultan Muratbek and
+                       Charisse Ivana Yeung and
+                       Chanwut Kittivorawong and
+                       Alvin Cheung},
+      year          = {2026},
+}</code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
