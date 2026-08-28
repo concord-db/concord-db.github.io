@@ -115,8 +115,32 @@
         .links {
             display: flex;
             justify-content: center;
+            align-items: center;
+            gap: 12px;
             margin-top: 10px;
             margin-bottom: 10px;
+        }
+
+        .demo-button {
+            display: inline-block;
+            padding: 7px 18px;
+            border: 1px solid #5f3917;
+            border-radius: 5px;
+            background-color: #7a4a1f;
+            color: #fffaf0;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .demo-button:hover,
+        .demo-button:focus-visible {
+            background-color: #5f3917;
+            color: #fffaf0;
+        }
+
+        .demo-button:focus-visible {
+            outline: 3px solid rgba(122, 74, 31, 0.3);
+            outline-offset: 2px;
         }
 
         .title {
@@ -162,6 +186,7 @@
             &nbsp;&nbsp;
             [<a class="link" href="#" target="_blank">Paper</a>]
             &nbsp;&nbsp; -->
+            <a class="demo-button" href="/concord-demo/">Demo</a>
             [<a class="link" href="https://github.com/chanwutk/mmds" target="_blank">GitHub</a>]
         </div>
         <p align="justify">
