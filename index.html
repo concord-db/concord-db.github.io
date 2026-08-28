@@ -121,24 +121,38 @@
             margin-bottom: 10px;
         }
 
-        .demo-button {
+        .resource-button {
             display: inline-block;
             padding: 7px 18px;
             border: 1px solid #5f3917;
             border-radius: 5px;
-            background-color: #7a4a1f;
-            color: #fffaf0;
             font-weight: 600;
             text-decoration: none;
         }
 
-        .demo-button:hover,
-        .demo-button:focus-visible {
+        .resource-button--primary {
+            background-color: #7a4a1f;
+            color: #fffaf0;
+        }
+
+        .resource-button--primary:hover,
+        .resource-button--primary:focus-visible {
             background-color: #5f3917;
             color: #fffaf0;
         }
 
-        .demo-button:focus-visible {
+        .resource-button--secondary {
+            background-color: transparent;
+            color: #7a4a1f;
+        }
+
+        .resource-button--secondary:hover,
+        .resource-button--secondary:focus-visible {
+            background-color: rgba(122, 74, 31, 0.1);
+            color: #5f3917;
+        }
+
+        .resource-button:focus-visible {
             outline: 3px solid rgba(122, 74, 31, 0.3);
             outline-offset: 2px;
         }
@@ -186,8 +200,9 @@
             &nbsp;&nbsp;
             [<a class="link" href="#" target="_blank">Paper</a>]
             &nbsp;&nbsp; -->
-            <a class="demo-button" href="/concord-demo/">Demo</a>
-            [<a class="link" href="https://github.com/chanwutk/mmds" target="_blank">GitHub</a>]
+            <a class="resource-button resource-button--primary" href="/demo/">Demo</a>
+            <a class="resource-button resource-button--secondary" href="https://github.com/chanwutk/mmds"
+                target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <p align="justify">
             Semantic video queries let users analyze video content by issuing natural-language prompts to a
